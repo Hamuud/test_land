@@ -262,6 +262,7 @@ section {
   border: none;
   display: flex;
   outline: none;
+  background-color: #fff;
   width: 30px;
   height: 30px;
   cursor: pointer;
