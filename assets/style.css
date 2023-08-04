@@ -336,6 +336,24 @@ section {
   max-height: max-content;
 }
 
+.slider-nav .slick-arrow.slick-prev {
+  left: 0;
+  z-index: 2;
+  background-image: url("./prev.png");
+  border: 1px solid transparent;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.slider-nav .slick-arrow.slick-next {
+  right: 0;
+  z-index: 2;
+  background-image: url("./next.png");
+  border: 1px solid transparent;
+  background-color: #000;
+  border-radius: 80%;
+}
+
 .desc {
   margin-bottom: 30px;
 }
