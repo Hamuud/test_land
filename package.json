@@ -1,18 +1,22 @@
 {
+  "homepage": ".",
   "name": "test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "postcss": "^8.1.0",
     "sass": "^1.64.2"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "live-server": "^1.2.2"
   },
   "scripts": {
     "build:sass": "sass assets/style.scss assets/style.css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build:sass && npx live-server"
+    "start": "npm run build:sass && npx live-server",
+    "deploy": "node-sass styles/main.scss | postcss -o dist/main.css && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",

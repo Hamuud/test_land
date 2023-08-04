@@ -239,16 +239,25 @@ section {
   }
   
   &_item {
-    margin-right: 35px;
+    margin-right: $margin-desc;
   }
 
   &_link {
     color: #000;
+
+    &:hover {
+      text-decoration: none;
+      cursor: pointer;
+    }
   }
 
-  &_button {
+  &_button-list {
     display: flex;
     align-items: center;
+
+    &:nth-last-child(-n + 1) {
+      margin: 0;
+    }
   }
 }
 
@@ -308,6 +317,10 @@ section {
     display: block;
     max-width: 110px;
     max-height: $header-height;
+  }
+
+  @media (max-width: 768px) {
+    margin-right: 0;
   }
 }
 

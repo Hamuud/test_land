@@ -225,14 +225,21 @@ section {
   }
 }
 .header_item {
-  margin-right: 35px;
+  margin-right: 15px;
 }
 .header_link {
   color: #000;
 }
-.header_button {
+.header_link:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.header_button-list {
   display: flex;
   align-items: center;
+}
+.header_button-list:nth-last-child(-n+1) {
+  margin: 0;
 }
 
 .burger {
@@ -286,6 +293,11 @@ section {
   display: block;
   max-width: 110px;
   max-height: 70px;
+}
+@media (max-width: 768px) {
+  .logo {
+    margin-right: 0;
+  }
 }
 
 .container_img {
